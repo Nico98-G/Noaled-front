@@ -20,7 +20,7 @@ const NavApp = () => {
         <nav className="navegador">
             <ul className='flex gap-6 text-md font-medium mr-20'>
                 <li className='hover:scale-110 hover:text-blue-400 transition-all duration-300 cursor-pointer'>Productos</li>
-                <li className='hover:scale-110 hover:text-blue-400 transition-all duration-300 cursor-pointer'>Sobre nosotros</li>
+                <li className='hover:scale-110 hover:text-blue-400 transition-all duration-300 cursor-pointer'>Jadever Point</li>
                 <li className='hover:scale-110 hover:text-blue-400 transition-all duration-300 cursor-pointer'>Contacto</li>
             </ul>
         </nav>
