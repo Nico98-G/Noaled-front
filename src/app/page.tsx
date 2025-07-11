@@ -1,15 +1,12 @@
-import Image from "next/image";
-import CarruselApp from "./components/CarruselApp";
-import "../app/css/carrusel.css"
+import { useRouter } from "next/navigation";
+import Bienvenida from "./components/BienvenidaApp";
+import React from "react";
 
-
-export default function Home() {
-
-  
+export default function page() {
 
   return (
-    <>
-      <CarruselApp/>
-    </>
+    <div>
+      <Bienvenida/>
+    </div>
   );
 }

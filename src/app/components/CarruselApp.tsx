@@ -5,21 +5,29 @@ import Imagenes from '../data/ImgCarrusel'
 
 const CarruselApp = () => {
   const [indiceActual, setIndiceActual] = useState(0);
+  const [fade, setFade] = useState (true)
 
   useEffect(()=>{
     const intervalo = setInterval(()=>{
-      setIndiceActual((prevIndex) => (prevIndex + 1) % Imagenes.length);
+      setFade(false)
+
+      setTimeout(() => {
+        setIndiceActual((prevIndex) => (prevIndex + 1) % Imagenes.length);
+        setFade(true);
+      }, 500);
     }, 3000);
 
     return () => clearInterval(intervalo);
   }, []);
 
   return (
-    <div className='w-full flex justify-center items-center'>
+    <div className="w-full flex justify-center items-center overflow-hidden">
       <img
         src={Imagenes[indiceActual]}
         alt={`Imagen ${indiceActual}`}
-        className='w-full max-h-75 object-contain'
+        className={`w-full max-h-[295px] object-cover transition-opacity duration-500 ${
+          fade ? "opacity-100" : "opacity-0"
+        }`}
       />
     </div>
   )
