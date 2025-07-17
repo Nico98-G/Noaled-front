@@ -1,20 +1,16 @@
-"use client"; // IMPORTANTE
+"use client";
 
 import { usePathname } from "next/navigation";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 
 import NavApp from "./components/NavApp";
 import FooterApp from "./components/FooterApp";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const roboto = Roboto({
+  variable: "--font-roboto",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "500", "700"],
 });
 
 export default function RootLayout({
@@ -28,7 +24,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${roboto.variable} antialiased`}>
         {mostrarLayout && <NavApp />}
         <main>{children}</main>
         {mostrarLayout && <FooterApp />}
