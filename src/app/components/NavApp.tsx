@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 
 const NavApp = () => {
@@ -19,9 +20,21 @@ const NavApp = () => {
         </button>
         <nav className="navegador">
             <ul className='flex gap-6 text-md font-medium mr-20'>
-                <li className='hover:scale-110 hover:text-blue-400 transition-all duration-300 cursor-pointer'>Productos</li>
-                <li className='hover:scale-110 hover:text-blue-400 transition-all duration-300 cursor-pointer'>Jadever Point</li>
-                <li className='hover:scale-110 hover:text-blue-400 transition-all duration-300 cursor-pointer'>Contacto</li>
+                <li className='hover:scale-110 hover:text-blue-400 transition-all duration-300 cursor-pointer'>
+                  <Link href="/productos">
+                    Productos
+                  </Link>
+                </li>
+                <li className='hover:scale-110 hover:text-blue-400 transition-all duration-300 cursor-pointer'>
+                  <Link href="/home">
+                    Sobre nosotros 
+                  </Link>
+                </li>
+                <li className='hover:scale-110 hover:text-blue-400 transition-all duration-300 cursor-pointer'>
+                  <Link href="/contacto">
+                    Contacto
+                  </Link>
+                </li>
             </ul>
         </nav>
     </header>
