@@ -23,7 +23,7 @@ export default function RootLayout({
   const mostrarLayout = pathname !== "/"; // ocultar en la página de bienvenida "/"
 
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={`${roboto.variable} antialiased`}>
         {mostrarLayout && <NavApp />}
         <main>{children}</main>

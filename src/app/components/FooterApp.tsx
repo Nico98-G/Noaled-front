@@ -6,7 +6,7 @@ import { BsTwitterX } from 'react-icons/bs';
 
 const FooterApp = () => {
   return (
-    <footer className='bg-gray-400 text-white flex items-center px-10'>
+    <footer className='bg-gray-400 text-white flex items-center px-10 py-2'>
         <div>
             <Image
             src={"/noa-led-removebg-preview.png"}
