@@ -1,6 +1,6 @@
 import Image from "next/image";
 import CarruselApp from "../components/CarruselApp";
-import "../css/home.css";
+import "./home.css";
 import "../css/carrusel.css";
 
 export default function page() {
