@@ -53,7 +53,7 @@ export default function Bienvenida() {
           alt="logo"
           className="w-[100px] shadow-xl/30 bg-transparent rounded-[21px]"
         />
-        <h1 className="text-[40px]">Bienvenido al grupo Noaled</h1>
+        <h1 className="text-[40px]">Bienvenido a grupo Noaled</h1>
         <p className="text-[20px]">Tu próximo gran proyecto</p>
         <button
           onClick={irAPrincipal}

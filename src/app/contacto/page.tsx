@@ -19,7 +19,8 @@ const page = () => {
                     </a>
                 </button>
                 o
-                <br/>
+                <br />
+                <br />
             </div>
 
             <div className='flex flex-col'>
