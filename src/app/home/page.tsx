@@ -106,6 +106,18 @@ export default function page() {
             clientes productos originales y un servicio de primer nivel.
           </p>
         </div>
+
+        <div className="flex justify-center items-center px-40 bg-sky-100" id="jadever">
+          <div className="relative w-1/2 flex justify-center items-center overflow-hidden before:content-[''] before:absolute before:left-0 before:top-[5%] before:w-full before:h-[90%] before:bg-[url('/local.png')] before:bg-center before:blur-[1px] before:bg-cover  before:rounded-xl">
+            <h1 className="text-[40px] text-black relative z-10 bg-white/80 px-6 rounded-full ">
+              Jadever Point
+            </h1>
+          </div>
+          <p className="text-[20px] w-1/2 ml-5">
+            Somos el primer punto exclusivo de la marca Jadever en el país, 
+            ofreciendo productos con garantía oficial y respaldo internacional.
+          </p>
+        </div>
       </section>
     </>
   );

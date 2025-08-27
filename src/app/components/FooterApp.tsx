@@ -51,8 +51,8 @@ const FooterApp = () => {
       <div className="text-right">
         <div className="text-[18px] font-semibold">Locales</div>
         <div>
-          <h5>San Juan 1171, Tucumán</h5>
-          <h5>Marco Avellaneda 413, Tucumán</h5>
+          <h5>San Juan 1171, SMT</h5>
+          <h5>Marco Avellaneda 413, SMT</h5>
         </div>
       </div>
     </footer>

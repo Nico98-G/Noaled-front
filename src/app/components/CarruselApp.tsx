@@ -25,7 +25,7 @@ const CarruselApp = () => {
       <img
         src={Imagenes[indiceActual]}
         alt={`Imagen ${indiceActual}`}
-        className={`w-full max-h-[295px] object-cover transition-opacity duration-500 ${
+        className={`w-full object-cover transition-opacity duration-500 ${
           fade ? "opacity-100" : "opacity-0"
         }`}
       />

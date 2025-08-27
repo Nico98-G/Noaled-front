@@ -1,7 +1,8 @@
 const Imagenes = [
     "https://ddkjx5kezodfx.cloudfront.net/Weyop/BP/Store/Slider/1751896422_U0VNQU5BIERFTCBFTEVDVFJJQ0lTVEE=.png",
     "/carrusel1.jpg",
-    "/carrusel3.jpg"
+    "/carrusel3.jpg",
+    "/carrusel4.png",
 ]
 
 export default (Imagenes);
