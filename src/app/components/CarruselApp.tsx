@@ -1,5 +1,5 @@
 "use client"
-
+import Image from "next/image";
 import React, { useEffect, useState } from 'react'
 import Imagenes from '../data/ImgCarrusel'
 
@@ -22,12 +22,13 @@ const CarruselApp = () => {
 
   return (
     <div className="w-full flex justify-center items-center overflow-hidden">
-      <img
+      <Image
         src={Imagenes[indiceActual]}
         alt={`Imagen ${indiceActual}`}
-        className={`w-full object-cover transition-opacity duration-500 ${
-          fade ? "opacity-100" : "opacity-0"
-        }`}
+        width={1920}       
+        height={450}        
+        style={{ objectFit: "cover" }}
+        className={`w-full transition-opacity duration-500 ${fade ? "opacity-100" : "opacity-0"}`}
       />
     </div>
   )

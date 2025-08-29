@@ -15,35 +15,56 @@ export default function page() {
       <CarruselApp />
 
       <div className="mt-6 flex justify-center">
-        <div className="border-t-2 border-b-2 border-gray-300 flex items-center gap-6 px-4 py-2 w-fit marcas">
-          <img
-            src="https://images.seeklogo.com/logo-png/10/2/philips-logo-png_seeklogo-108446.png"
-            alt=""
+        <div className="border-t-2 border-b-2 border-gray-300 flex items-center gap-6 px-4 py-2 w-fit">
+          <Image
+            src="/logos/philips.png"
+            alt="imagen"
+            width={100}
+            height={50}
           />
-          <img
-            src="https://acdn-us.mitiendanube.com/stores/383/963/products/logo-macroled-1-0693060a1f383417c717153700811580-640-0.png"
-            alt=""
+          <Image
+            src="/logos/macroled.png"
+            alt="imagen"
+            width={100}
+            height={50}
           />
-          <img
-            src="https://promomejia.com/wp-content/uploads/2018/08/Logo-Chint-Mexico.png"
-            alt=""
+          <Image
+            src="/logos/chint.png"
+            alt="imagen"
+            width={100}
+            height={50}
           />
-          <img 
-            src="/litex.png" 
-            alt="" />
-          <img 
-            src="https://herramientasjadever.cl/cdn/shop/files/LOGO_JADEVER_1.png?v=1727963455&width=600"
-            alt="" />
-          <img 
-            src="https://strapi-pm.s3.us-east-1.amazonaws.com/strada_logo_positivo_tag_Agustin_Pistone_page_0001_1_5e3c1154e7.jpg" 
-            alt="" />
+          <Image 
+            src="/logos/litex.png" 
+            alt="imagen"
+            width={100} 
+            height={50}
+          />
+          <Image 
+            src="/logos/jadever.png"
+            alt="imagen"
+            width={100} 
+            height={50}
+          />
+          <Image 
+            src="/logos/strada.jpg" 
+            alt="imagen"
+            width={100} 
+            height={50}
+          />
 
-          <img 
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbdEunsFkC4skKtAURub8Eh1BtqIJehNw3Sg&s" 
-            alt="" />
-          <img 
-            src="https://lummina.com.ar/wp-content/uploads/2022/03/D_695745-MLA32533818407_102019-F.jpg" 
-            alt="" />
+          <Image 
+            src="/logos/richi.png" 
+            alt="imagen"
+            width={100}
+            height={50}
+          />
+          <Image 
+            src="/logos/teclastar.jpg" 
+            alt="imagen"
+            width={100}
+            height={50}
+          />
         </div>
       </div>
 
@@ -54,7 +75,7 @@ export default function page() {
           <br /> 
           Pedí tu cotización 
         </p>
-        <img src="/envios.png" alt="" className=""/>
+        <Image src="/envios.png" alt="" width={900} height={350}/>
       </div>
 
 
