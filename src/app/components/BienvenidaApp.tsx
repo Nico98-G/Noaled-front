@@ -1,5 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export default function Bienvenida() {
@@ -39,19 +40,23 @@ export default function Bienvenida() {
       }`}
     >
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-[-1]">
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/001/231/006/large_2x/lighted-city-skyline-during-nighttime-free-photo.jpeg"
+        <Image
+          src="/bienvenidaFondo.jpeg"
           alt="imagen"
+          width={1920}
+          height={1080}
           className="w-[60vw] h-screen object-cover mask-linear-100 mask-linear-from-40% mask-linear-to-55% hidden sm:block"
         />
       </div>
 
       <div className="flex flex-col items-center">
 
-        <img 
+        <Image 
           src="/logo.png"
           alt="logo"
-          className="w-[100px] shadow-xl/30 bg-transparent rounded-[21px]"
+          width={100}
+          height={100}
+          className="shadow-xl/30 bg-transparent rounded-[21px]"
         />
         <h1 className="text-[40px]">Bienvenido a grupo Noaled</h1>
         <p className="text-[20px]">Tu próximo gran proyecto</p>
