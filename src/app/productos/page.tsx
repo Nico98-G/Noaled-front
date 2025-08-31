@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({
@@ -19,22 +20,34 @@ const page = () => {
         <section className={`${montserrat.className} -mt-10 mb-10 bg-gray-100 w-full py-10 rounded-md shadow-inner`}>
             <ul className='grid grid-cols-4 gap-5 justify-items-center'>
                 <li className=' justify-items-center text-center p-[15px] h-[300px] max-w-[250px] transition duration-300 ease-in-out scale-100 hover:scale-110'>
-                    <img 
-                        src="https://diariosanrafael.com.ar/wp-content/uploads/2022/07/cg-led-para-alumbrado-publico.jpg" 
-                        alt="imagen" 
-                        className="h-[80%] overflow-hidden rounded-sm"
-                    />
-                    <p className='mt-[10px] font-bold text-[18px]'>
-                        ILUMINACIÓN
-                        <br />
-                        PÚBLICA/INDUSTRIAL
-                    </p>
+                    <a 
+                    href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwj8p7mA_LWPAxWkB7kGHVH-MicQFnoECCcQAQ&url=https%3A%2F%2Fimages.philips.com%2Fis%2Fcontent%2FPhilipsConsumer%2FPDFDownloads%2FArgentine%2FODLI20160715_001-UPD-es_AR-Cat%25C3%25A1logo-Outdoor-2016.pdf&usg=AOvVaw2yKlPUPyukCg5LcoYc93RD&opi=89978449"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    
+                        <Image 
+                            src="/productos/alumbrado.jpg" 
+                            alt="imagen"
+                            height={300}
+                            width={250}
+                            className="h-[80%] overflow-hidden rounded-sm"
+                        />
+                        <p className='mt-[10px] font-bold text-[18px]'>
+                            ILUMINACIÓN
+                            <br />
+                            PÚBLICA/INDUSTRIAL
+                        </p>
+                    
+                    </a>
                 </li>
 
                 <li className='justify-items-center text-center p-[15px] h-[300px] max-w-[250px] transition duration-300 ease-in-out scale-100 hover:scale-110'>
-                    <img 
-                        src="https://sledcolombia.org/wp-content/uploads/2015/02/luz-empotrada-para-la-cocina.jpg" 
-                        alt="imagen" 
+                    <Image 
+                        src="/productos/hogar.jpg" 
+                        alt="imagen"
+                        height={300}
+                        width={250}
                         className='h-[80%] overflow-hidden rounded-sm'
                     />
                     <p className='mt-[10px] font-bold text-[18px]'>
@@ -44,9 +57,11 @@ const page = () => {
                 </li>
 
                 <li className='justify-items-center text-center p-[15px] h-[300px] max-w-[250px] transition duration-300 ease-in-out scale-100 hover:scale-110'>
-                    <img 
-                        src="/materiales.png" 
-                        alt="imagen" 
+                    <Image 
+                        src="/productos/materiales.png" 
+                        alt="imagen"
+                        height={300}
+                        width={250} 
                         className='h-[80%] overflow-hidden object-cover rounded-sm'
                     />
                     <p className='mt-[10px] font-bold text-[18px]'>
@@ -55,14 +70,23 @@ const page = () => {
                 </li>
 
                 <li className='justify-items-center text-center p-[15px] h-[300px] max-w-[250px] transition duration-300 ease-in-out scale-100 hover:scale-110'>
-                    <img 
-                        src="https://dcdn-us.mitiendanube.com/stores/005/900/662/products/d_757190-mla79589157545_092024-o-e7cdf74d108dca792117432417611564-1024-1024.webp" 
-                        alt="imagen"
-                        className='h-[80%] overflow-hidden rounded-sm' 
-                    />
-                    <p className='mt-[10px] font-bold text-[18px]'>
-                        HERRAMIENTAS
-                    </p>
+                    <a 
+                    href="https://catalogo-jadever.netlify.app/catalogo-jadever-argentina.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                        <Image 
+                            src="/productos/herramientas.webp" 
+                            alt="imagen"
+                            height={300}
+                            width={250}
+                            className='h-[80%] overflow-hidden rounded-sm' 
+                        />
+                        <p className='mt-[10px] font-bold text-[18px]'>
+                            HERRAMIENTAS
+                        </p>
+                    
+                    </a>
                 </li>
             </ul>
         </section>
