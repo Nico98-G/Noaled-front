@@ -1,13 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import { Montserrat } from "next/font/google";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { SiTiktok } from 'react-icons/si';
 
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["700"],
-});
 
 
 
