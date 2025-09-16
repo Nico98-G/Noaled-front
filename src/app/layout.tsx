@@ -20,13 +20,16 @@ export default function RootLayout({
 }) {
   const pathname = usePathname();
 
-  const mostrarLayout = pathname !== "/"; // ocultar en la página de bienvenida "/"
+  const mostrarLayout = pathname !== "/";
 
   return (
     <html lang="es">
-      <body className={`${roboto.variable} antialiased`}>
+      <body className={`${roboto.variable} antialiased flex flex-col min-h-screen`}>
         {mostrarLayout && <NavApp />}
-        <main>{children}</main>
+        
+        {/* 👇 Esto ocupa todo el espacio libre */}
+        <main className="flex-grow flex flex-col">{children}</main>
+        
         {mostrarLayout && <FooterApp />}
       </body>
     </html>
