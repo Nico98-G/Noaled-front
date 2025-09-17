@@ -6,7 +6,7 @@ declare global {
     grecaptcha: {
       ready: (callback: () => void) => void;
       execute: (siteKey: string, options: { action: string }) => Promise<string>;
-      render: (container: string | HTMLElement, parameters: any) => string | number;
+      render: (container: string | HTMLElement, parameters: unknown) => string | number;
     };
   }
 }
