@@ -3,9 +3,14 @@ import { useEffect } from "react";
 
 declare global {
   interface Window {
-    grecaptcha: any;
+    grecaptcha: {
+      ready: (callback: () => void) => void;
+      execute: (siteKey: string, options: { action: string }) => Promise<string>;
+      render: (container: string | HTMLElement, parameters: any) => string | number;
+    };
   }
 }
+
 
 export default function RecaptchaClient() {
   useEffect(() => {
