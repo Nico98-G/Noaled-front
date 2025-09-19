@@ -1,44 +1,112 @@
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
+"use client";
+import React, { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const NavApp = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <header className='bg-gray-800 text-white flex items-center justify-between pt-2 pb-2'>
-        <Image
+    <header className="bg-gray-800 text-white flex items-center justify-between px-3 sm:px-6 py-2 relative overflow-x-hidden">
+      {/* Logo */}
+      <Image
         src={"/logo.png"}
         alt="logo"
         width={75}
         height={75}
-        className='ml-10'
-        />
+        className="w-10 h-10 sm:w-14 sm:h-14 md:w-20 md:h-20"
+      />
 
+      {/* Botón Hamburguesa (solo en móviles) */}
+      <button
+        className="md:hidden text-white focus:outline-none"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <svg
+          className="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d={
+              menuOpen
+                ? "M6 18L18 6M6 6l12 12" // X cuando está abierto
+                : "M4 6h16M4 12h16M4 18h16" // 3 líneas cuando está cerrado
+            }
+          />
+        </svg>
+      </button>
+
+      {/* Botón presupuesto (solo en pantallas grandes) */}
+      <div className="hidden md:block">
         <button
-        type='button'
-        className='rounded-md bg-blue-400 px-3 py-1 text-lg border border-transparent hover:border-white hover:border-2 transition-all cursor-pointer'>
-            Solicita tu presupuesto
+          type="button"
+          className="rounded-md bg-blue-400 px-3 py-1 text-lg border border-transparent hover:border-white hover:border-2 transition-all cursor-pointer"
+        >
+          Solicita tu presupuesto
         </button>
-        <nav className="navegador">
-            <ul className='flex gap-6 text-md font-medium mr-20'>
-                <li className='hover:scale-110 hover:text-blue-400 transition-all duration-300 cursor-pointer'>
-                  <Link href="/productos">
-                    Productos
-                  </Link>
-                </li>
-                <li className='hover:scale-110 hover:text-blue-400 transition-all duration-300 cursor-pointer'>
-                  <Link href="/home">
-                    Sobre nosotros 
-                  </Link>
-                </li>
-                <li className='hover:scale-110 hover:text-blue-400 transition-all duration-300 cursor-pointer'>
-                  <Link href="/contacto">
-                    Contacto
-                  </Link>
-                </li>
-            </ul>
-        </nav>
-    </header>
-  )
-}
+      </div>
 
-export default NavApp
+      {/* Menú Desktop */}
+      <nav className="hidden md:flex items-center gap-6">
+        <Link
+          href="/home"
+          className="hover:scale-110 hover:text-blue-400 transition-all duration-300"
+        >
+          Sobre nosotros
+        </Link>
+        <Link
+          href="/productos"
+          className="hover:scale-110 hover:text-blue-400 transition-all duration-300"
+        >
+          Productos
+        </Link>
+        <Link
+          href="/contacto"
+          className="hover:scale-110 hover:text-blue-400 transition-all duration-300"
+        >
+          Contacto
+        </Link>
+      </nav>
+
+      {/* Menú Mobile */}
+      {menuOpen && (
+        <div className="absolute top-full left-0 w-full bg-gray-900 flex flex-col items-center py-4 md:hidden z-50">
+          <button
+            type="button"
+            className="mb-3 rounded-md bg-blue-400 px-3 py-1 text-lg border border-transparent hover:border-white hover:border-2 transition-all cursor-pointer"
+          >
+            Solicita tu presupuesto
+          </button>
+          <Link
+            href="/home"
+            className="py-2 hover:text-blue-400 transition-all"
+            onClick={() => setMenuOpen(false)}
+          >
+            Sobre nosotros
+          </Link>
+          <Link
+            href="/productos"
+            className="py-2 hover:text-blue-400 transition-all"
+            onClick={() => setMenuOpen(false)}
+          >
+            Productos
+          </Link>
+          <Link
+            href="/contacto"
+            className="py-2 hover:text-blue-400 transition-all"
+            onClick={() => setMenuOpen(false)}
+          >
+            Contacto
+          </Link>
+        </div>
+      )}
+    </header>
+  );
+};
+
+export default NavApp;
