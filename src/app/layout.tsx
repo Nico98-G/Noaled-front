@@ -24,11 +24,11 @@ export default function RootLayout({
 
   return (
     <html lang="es">
-      <body className={`${roboto.variable} antialiased flex flex-col min-h-screen`}>
+      <body className={`${roboto.variable} antialiased flex flex-col min-h-screen overflow-x-hidden`}>
         {mostrarLayout && <NavApp />}
         
         {/* 👇 Esto ocupa todo el espacio libre */}
-        <main className="flex-grow flex flex-col">{children}</main>
+        <main className="flex-grow flex flex-col w-full">{children}</main>
         
         {mostrarLayout && <FooterApp />}
       </body>

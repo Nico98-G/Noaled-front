@@ -16,7 +16,7 @@ export default function page() {
 
       <div className="mt-6 flex justify-center">
         <div className="border-t-2 border-b-2 border-gray-300 px-4 py-2 w-fit">
-          <div className="grid grid-cols-2 gap-6 md:flex md:items-center md:gap-6">
+          <div className="grid grid-cols-2 gap-6 items-center md:grid-cols-4 lg:flex lg:items-center lg:gap-6">
             <Image src="/logos/philips.png" alt="imagen" width={100} height={50} />
             <Image src="/logos/macroled.png" alt="imagen" width={100} height={50} />
             <Image src="/logos/chint.png" alt="imagen" width={100} height={50} />
@@ -42,7 +42,6 @@ export default function page() {
           Pedí tu cotización
         </p>
 
-        {/* Imagen única, pero responsiva */}
         <Image
           src="/envios.png"
           alt="envios"
@@ -55,8 +54,8 @@ export default function page() {
 
 
       <section className="text-justify main-text">
-        {/* QUIÉNES SOMOS */}
-        <div className="flex flex-col md:flex-row justify-center items-center px-6 md:px-40 bg-sky-100">
+        
+        <div className="flex flex-col pb-[10px] sm:pb-[0px] md:flex-row justify-center items-center px-6 md:px-20 bg-sky-100">
           <div className="relative w-full md:w-1/2 flex justify-center items-center overflow-hidden 
             before:content-[''] before:absolute before:left-0 before:top-[5%] before:w-full before:h-[90%] 
             before:bg-[url('/local.png')] before:bg-center before:blur-[1px] before:bg-cover before:rounded-xl">
@@ -71,9 +70,9 @@ export default function page() {
           </p>
         </div>
 
-        {/* QUÉ OFRECEMOS */}
+        
         <div className="shadow-sm inset-shadow-sm bg-orange-300">
-          <div className="flex flex-col md:flex-row justify-center items-center px-6 md:px-40">
+          <div className="flex flex-col pb-[10px] sm:pb-[0px] sm:pb-[0px] md:flex-row justify-center items-center px-6 md:px-20">
             <div className="relative w-full md:w-1/2 flex justify-center items-center overflow-hidden 
               before:content-[''] before:absolute before:left-0 before:top-[5%] before:w-full before:h-[90%] 
               before:bg-[url('/atencion.png')] before:bg-center before:bg-cover before:blur-[2px] before:rounded-xl">
@@ -88,8 +87,8 @@ export default function page() {
           </div>
         </div>
 
-        {/* DISTRIBUIDOR PHILIPS */}
-        <div className="flex flex-col md:flex-row justify-center items-center px-6 md:px-40">
+
+        <div className="flex flex-col pb-[10px] sm:pb-[0px] sm:pb-[0px] md:flex-row justify-center items-center px-4 sm:px-6 md:px-20 lg:px-40">
           <div className="relative w-full md:w-1/2 flex justify-center items-center overflow-hidden 
             before:content-[''] before:absolute before:left-0 before:top-[5%] before:w-full before:h-[90%] 
             before:bg-[url('/philips.png')] before:bg-center before:blur-[2px] before:bg-cover before:rounded-xl">
@@ -102,8 +101,8 @@ export default function page() {
           </p>
         </div>
 
-        {/* JADEVER POINT */}
-        <div className="flex flex-col md:flex-row justify-center items-center px-6 md:px-40 bg-sky-100" id="jadever">
+
+        <div className="flex flex-col pb-[10px] sm:pb-[0px] md:flex-row justify-center items-center px-4 sm:px-6 md:px-20 lg:px-40 bg-sky-100" id="jadever">
           <div className="relative w-full md:w-1/2 flex justify-center items-center overflow-hidden 
             before:content-[''] before:absolute before:left-0 before:top-[5%] before:w-full before:h-[90%] 
             before:bg-[url('/local.png')] before:bg-center before:blur-[1px] before:bg-cover before:rounded-xl">

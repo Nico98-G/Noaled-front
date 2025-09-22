@@ -7,14 +7,14 @@ const NavApp = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-gray-800 text-white flex items-center justify-between px-3 sm:px-6 py-2 relative overflow-x-hidden">
+    <header className="bg-gray-800 text-white flex items-center justify-between px-3 sm:px-6 py-2 w-full max-w-full relative">
       {/* Logo */}
       <Image
         src={"/logo.png"}
         alt="logo"
         width={75}
         height={75}
-        className="w-10 h-10 sm:w-14 sm:h-14 md:w-20 md:h-20"
+        className="w-10 h-10 sm:w-14 sm:h-14 md:w-20 md:h-20 flex-shrink-0"
       />
 
       {/* Botón Hamburguesa (solo en móviles) */}
@@ -51,8 +51,8 @@ const NavApp = () => {
         </button>
       </div>
 
-      {/* Menú Desktop */}
-      <nav className="hidden md:flex items-center gap-6">
+      {/* Menú Desktop (solo md y más grande) */}
+      <nav className="hidden md:flex items-center gap-6 mr-10">
         <Link
           href="/home"
           className="hover:scale-110 hover:text-blue-400 transition-all duration-300"
@@ -73,7 +73,7 @@ const NavApp = () => {
         </Link>
       </nav>
 
-      {/* Menú Mobile */}
+      {/* Menú Mobile (con botón + links) */}
       {menuOpen && (
         <div className="absolute top-full left-0 w-full bg-gray-900 flex flex-col items-center py-4 md:hidden z-50">
           <button
