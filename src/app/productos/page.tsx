@@ -18,7 +18,7 @@ const page = () => {
         </section>
 
         <section className={`${montserrat.className} -mt-10 mb-10 bg-gray-100 w-full py-10 rounded-md shadow-inner`}>
-            <ul className='grid grid-cols-4 gap-5 justify-items-center'>
+            <ul className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 justify-items-center'>
                 <li className=' justify-items-center text-center p-[15px] h-[300px] max-w-[250px] transition duration-300 ease-in-out scale-100 hover:scale-110'>
                     <a 
                     href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwj8p7mA_LWPAxWkB7kGHVH-MicQFnoECCcQAQ&url=https%3A%2F%2Fimages.philips.com%2Fis%2Fcontent%2FPhilipsConsumer%2FPDFDownloads%2FArgentine%2FODLI20160715_001-UPD-es_AR-Cat%25C3%25A1logo-Outdoor-2016.pdf&usg=AOvVaw2yKlPUPyukCg5LcoYc93RD&opi=89978449"
