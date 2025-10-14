@@ -43,12 +43,21 @@ const NavApp = () => {
 
       {/* Botón presupuesto (solo en pantallas grandes) */}
       <div className="hidden md:block">
+        <a
+              href="https://wa.me/5493814146771"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-1"
+            >
         <button
           type="button"
           className="rounded-md bg-blue-400 px-3 py-1 text-lg border border-transparent hover:border-white hover:border-2 transition-all cursor-pointer"
         >
+          
           Solicita tu presupuesto
         </button>
+
+            </a>
       </div>
 
       {/* Menú Desktop (solo md y más grande) */}
@@ -76,12 +85,21 @@ const NavApp = () => {
       {/* Menú Mobile (con botón + links) */}
       {menuOpen && (
         <div className="absolute top-full left-0 w-full bg-gray-900 flex flex-col items-center py-4 md:hidden z-50">
-          <button
-            type="button"
-            className="mb-3 rounded-md bg-blue-400 px-3 py-1 text-lg border border-transparent hover:border-white hover:border-2 transition-all cursor-pointer"
+          <a
+            href="https://wa.me/5493814146771"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-1"
           >
-            Solicita tu presupuesto
-          </button>
+            <button
+              type="button"
+              className="mb-3 rounded-md bg-blue-400 px-3 py-1 text-lg border border-transparent hover:border-white hover:border-2 transition-all cursor-pointer"
+            >
+              Solicita tu presupuesto
+            </button>
+
+          </a>
+          
           <Link
             href="/home"
             className="py-2 hover:text-blue-400 transition-all"

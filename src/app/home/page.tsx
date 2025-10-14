@@ -88,21 +88,23 @@ export default function page() {
         </div>
 
 
-        <div className="flex flex-col pb-[10px] sm:pb-[0px] sm:pb-[0px] md:flex-row justify-center items-center px-4 sm:px-6 md:px-20 lg:px-40">
-          <div className="relative w-full md:w-1/2 flex justify-center items-center overflow-hidden 
-            before:content-[''] before:absolute before:left-0 before:top-[5%] before:w-full before:h-[90%] 
-            before:bg-[url('/philips.png')] before:bg-center before:blur-[2px] before:bg-cover before:rounded-xl">
-            <h1 className="text-2xl md:text-[40px] text-black text-center relative z-10 bg-white/80 px-4 md:px-6 rounded-full">
-              Distribuidor Philips
-            </h1>
+        <div className="bg-white">
+          <div className="flex flex-col pb-[10px] sm:pb-[0px] sm:pb-[0px] md:flex-row justify-center items-center px-4 sm:px-6 md:px-20">
+            <div className="relative w-full md:w-1/2 flex justify-center items-center overflow-hidden 
+              before:content-[''] before:absolute before:left-0 before:top-[5%] before:w-full before:h-[90%] 
+              before:bg-[url('/philips.png')] before:bg-center before:blur-[2px] before:bg-cover before:rounded-xl">
+              <h1 className="text-2xl md:text-[40px] text-black text-center relative z-10 bg-white/80 px-4 md:px-6 rounded-full">
+                Distribuidor Philips
+              </h1>
+            </div>
+            <p className="text-base md:text-[20px] w-full md:w-1/2 mt-4 md:mt-0 md:ml-5">
+              Único distribuidor mayorista Philips en el NOA, garantizando a nuestros clientes productos originales y un servicio de primer nivel.
+            </p>
           </div>
-          <p className="text-base md:text-[20px] w-full md:w-1/2 mt-4 md:mt-0 md:ml-5">
-            Único distribuidor mayorista Philips en el NOA, garantizando a nuestros clientes productos originales y un servicio de primer nivel.
-          </p>
         </div>
 
 
-        <div className="flex flex-col pb-[10px] sm:pb-[0px] md:flex-row justify-center items-center px-4 sm:px-6 md:px-20 lg:px-40 bg-sky-100" id="jadever">
+        <div className="flex flex-col pb-[10px] sm:pb-[0px] md:flex-row justify-center items-center px-4 sm:px-6 md:px-20 bg-sky-100" id="jadever">
           <div className="relative w-full md:w-1/2 flex justify-center items-center overflow-hidden 
             before:content-[''] before:absolute before:left-0 before:top-[5%] before:w-full before:h-[90%] 
             before:bg-[url('/local.png')] before:bg-center before:blur-[1px] before:bg-cover before:rounded-xl">

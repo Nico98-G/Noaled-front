@@ -8,14 +8,13 @@ const RecaptchaClient = dynamic(() => import("../components/RecaptchaClient"), {
 
 export default function Page() {
   return (
-    <div className="px-20 flex justify-center content-center my-10">
-      <main className="flex flex-col text-[20px] w-1/2 mr-2">
-        <div className="">
-          
+    <div className="grid grid-cols-1 px-5 justify-center content-center my-10 lg:grid-cols-2 lg:px-20">
+      <main className="flex flex-col text-[20px] mr-2">
+        <div className="text-center">
           Envíanos un mensaje o pedi tu presupuesto a nuestro
           <br />
           <br />
-          <button className="bg-green-500 text-white px-2 py-1 rounded-lg flex items-center">
+          <button className="bg-green-500 text-white px-2 py-1 rounded-lg justify-self-center flex items-center">
             <FaWhatsapp />
             <a
               href="https://wa.me/5493814146771"
@@ -26,18 +25,17 @@ export default function Page() {
               WhatsApp
             </a>
           </button>
-         <div className="flex items-center my-4">
-          <div className="flex-grow border-t border-gray-300"></div>
-          <span className="mx-4 text-gray-500">o</span>
-          <div className="flex-grow border-t border-gray-300"></div>
-        </div>
-
+          <div className="flex items-center my-4">
+            <div className="flex-grow border-t border-gray-300"></div>
+            <span className="mx-4 text-gray-500">o</span>
+            <div className="flex-grow border-t border-gray-300"></div>
+          </div>
         </div>
 
         <form
           action="https://submit-form.com/T6LpxKEBC"
           method="POST"
-          className="flex flex-col gap-2"
+          className="flex flex-col gap-2 mb-10 lg:mb-0"
         >
           <label>Email</label>
           <input
@@ -76,7 +74,7 @@ export default function Page() {
           <input type="hidden" name="_redirect" value="http://localhost:3000/contacto/exito" />
         </form>
       </main>
-      <aside className="w-1/2 ml-2 items-center justify-items-center"> 
+      <aside className="items-center justify-items-center lg:ml-2"> 
         <h2>Puedes llegar a nuestro local para conocernos personalmente</h2> 
         <br />
         <div className="w-[100%] flex justify-center"> 
