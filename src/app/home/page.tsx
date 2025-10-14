@@ -107,7 +107,7 @@ export default function page() {
         <div className="flex flex-col pb-[10px] sm:pb-[0px] md:flex-row justify-center items-center px-4 sm:px-6 md:px-20 bg-sky-100" id="jadever">
           <div className="relative w-full md:w-1/2 flex justify-center items-center overflow-hidden 
             before:content-[''] before:absolute before:left-0 before:top-[5%] before:w-full before:h-[90%] 
-            before:bg-[url('/local.png')] before:bg-center before:blur-[1px] before:bg-cover before:rounded-xl">
+            before:bg-[url('/jadever.png')] before:bg-center before:blur-[1px] before:bg-cover before:rounded-xl">
             <h1 className="text-2xl md:text-[40px] text-black relative z-10 bg-white/80 px-4 md:px-6 rounded-full text-center">
               Jadever Point
             </h1>
