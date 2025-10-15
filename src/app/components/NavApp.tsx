@@ -3,19 +3,26 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+
+
 const NavApp = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <header className="bg-gray-800 text-white flex items-center justify-between px-3 sm:px-6 py-2 w-full max-w-full relative">
       {/* Logo */}
-      <Image
-        src={"/logo.png"}
-        alt="logo"
-        width={75}
-        height={75}
-        className="w-10 h-10 sm:w-14 sm:h-14 md:w-20 md:h-20 flex-shrink-0"
-      />
+      <div className="flex items-center gap-2">
+        <Image
+          src={"/logo.png"}
+          alt="logo"
+          width={75}
+          height={75}
+          className="w-10 h-10 sm:w-14 sm:h-14 md:w-20 md:h-20 flex-shrink-0"
+        />
+
+        <h1 className="logo-font sm:text-[15px] md:text-[30px]">Grupo Noaled</h1>
+      </div>
+
 
       {/* Botón Hamburguesa (solo en móviles) */}
       <button

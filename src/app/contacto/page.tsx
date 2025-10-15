@@ -71,7 +71,7 @@ export default function Page() {
             Enviar
           </button>
 
-          <input type="hidden" name="_redirect" value="http://localhost:3000/contacto/exito" />
+          <input type="hidden" name="_redirect" value="http://www.gruponoaled.com/contacto/exito" />
         </form>
       </main>
       <aside className="items-center justify-items-center lg:ml-2"> 
