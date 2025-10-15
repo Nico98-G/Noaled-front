@@ -34,7 +34,7 @@ export default function RootLayout({
       <head>
         <title>Grupo Noaled</title>
         <meta name="description" content=""/>
-        <link rel="icon" href="/icon.png" sizes="any"/>
+        <link rel="icon" href="/favicon.ico" sizes="any"/>
       </head>
       <body className={`${roboto.variable} ${orbitron.variable} antialiased flex flex-col min-h-screen overflow-x-hidden`}>
         {mostrarLayout && <NavApp />}
