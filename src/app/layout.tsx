@@ -1,16 +1,23 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { Roboto } from "next/font/google";
+import { Roboto, Orbitron } from "next/font/google";
 import "./globals.css";
 
 import NavApp from "./components/NavApp";
 import FooterApp from "./components/FooterApp";
 
+
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
   weight: ["400", "500", "700"],
+});
+
+const orbitron = Orbitron({
+  variable: "--font-orbitron",
+  subsets: ["latin"],
+  weight: ["900"],
 });
 
 export default function RootLayout({
@@ -24,7 +31,12 @@ export default function RootLayout({
 
   return (
     <html lang="es">
-      <body className={`${roboto.variable} antialiased flex flex-col min-h-screen overflow-x-hidden`}>
+      <head>
+        <title>Grupo Noaled</title>
+        <meta name="description" content=""/>
+        <link rel="icon" href="/icon.png" sizes="any"/>
+      </head>
+      <body className={`${roboto.variable} ${orbitron.variable} antialiased flex flex-col min-h-screen overflow-x-hidden`}>
         {mostrarLayout && <NavApp />}
         
         {/* 👇 Esto ocupa todo el espacio libre */}

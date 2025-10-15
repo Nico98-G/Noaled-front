@@ -3,3 +3,7 @@
 body {
   font-family: var(--font-roboto), sans-serif;
 }
+
+.logo-font {
+  font-family: var(--font-orbitron);
+}
