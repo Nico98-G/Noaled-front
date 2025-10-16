@@ -7,3 +7,7 @@ body {
 .logo-font {
   font-family: var(--font-orbitron);
 }
+
+.roboto-font{
+  font-family: var(--font-roboto), sans-serif;
+}
