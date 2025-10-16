@@ -66,7 +66,7 @@ export default function Page() {
 
           <button
             type="submit"
-            className="bg-blue-500 text-white px-4 py-2 rounded-lg mt-2"
+            className="bg-blue-500 text-white px-4 py-2 cursor-pointer rounded-lg mt-2"
           >
             Enviar
           </button>
