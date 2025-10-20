@@ -1,5 +1,6 @@
 import Image from "next/image";
 import CarruselApp from "../components/CarruselApp";
+import PresentacionApp from "../components/PresentacionApp"
 import { Montserrat } from "next/font/google";
 import "./home.css";
 import "../css/carrusel.css";
@@ -13,6 +14,7 @@ export default function page() {
   return (
     <>
       <CarruselApp />
+      <PresentacionApp/>
 
       <div className="mt-6 flex justify-center">
         <div className="border-t-2 border-b-2 border-gray-300 px-4 py-2 w-fit">

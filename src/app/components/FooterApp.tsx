@@ -18,28 +18,33 @@ const FooterApp = () => {
       </div>
 
       {/* Redes sociales */}
-      <div className="flex justify-center gap-6">
-        <a
-          href="https://www.facebook.com/NOALEDTUCUMAN"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaFacebook size={28} className="md: w-10 h-10" />
-        </a>
-        <a
-          href="https://www.instagram.com/noaledtucuman/?hl=es"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaInstagram size={28} className="md: w-10 h-10" />
-        </a>
-        <a
-          href="https://www.tiktok.com/@noaled.srl"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <SiTiktok size={28} className="md: w-10 h-10" />
-        </a>
+      <div>
+        <div className="flex justify-center gap-6">
+          <a
+            href="https://www.facebook.com/NOALEDTUCUMAN"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook size={28} className="md: w-10 h-10" />
+          </a>
+          <a
+            href="https://www.instagram.com/noaledtucuman/?hl=es"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram size={28} className="md: w-10 h-10" />
+          </a>
+          <a
+            href="https://www.tiktok.com/@noaled.srl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SiTiktok size={28} className="md: w-10 h-10" />
+          </a>
+        </div>
+        <div>
+          <h3> © 2025 Grupo Noaled. Todos los derechos reservados.</h3>
+        </div>
       </div>
 
       {/* Direcciones */}
