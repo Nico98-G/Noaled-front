@@ -42,7 +42,7 @@ const FooterApp = () => {
             <SiTiktok size={28} className="md: w-10 h-10" />
           </a>
         </div>
-        <div>
+        <div className="justify-self-center mt-2">
           <h3> © 2025 Grupo Noaled. Todos los derechos reservados.</h3>
         </div>
       </div>
