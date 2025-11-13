@@ -2,11 +2,25 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter, usePathname } from "next/navigation";
 
 
 
 const NavApp = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const irASobreNosotros = () => {
+    if (pathname === "/home") {
+      const section = document.getElementById("main");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      router.push("/home#main");
+    }
+  };
 
   return (
     <header className="bg-gray-800 text-white flex items-center justify-between px-3 sm:px-6 py-2 w-full max-w-full relative">
@@ -73,12 +87,12 @@ const NavApp = () => {
 
       {/* Menú Desktop (solo md y más grande) */}
       <nav className="hidden md:flex items-center gap-6 mr-10">
-        <Link
-          href="/home"
+        <button
+          onClick={irASobreNosotros}
           className="hover:scale-110 hover:text-blue-400 transition-all duration-300"
         >
           Sobre nosotros
-        </Link>
+        </button>
         <Link
           href="/productos"
           className="hover:scale-110 hover:text-blue-400 transition-all duration-300"
