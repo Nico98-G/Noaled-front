@@ -15,7 +15,7 @@
           setIndiceActual((prevIndex) => (prevIndex + 1) % Imagenes.length);
           setFade(true);
         }, 500);
-      }, 3000);
+      }, 5000);
 
       return () => clearInterval(intervalo);
     }, []);
