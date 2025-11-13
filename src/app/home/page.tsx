@@ -55,9 +55,12 @@ export default function page() {
 
 
 
-      <section className="text-justify main-text">
+      <section
+        id="main"
+        className="text-justify main-text text-gray-700"
+       >
         
-        <div className="flex flex-col pb-[10px] sm:pb-[0px] md:flex-row justify-center items-center px-6 md:px-20 bg-sky-100">
+        <div className="flex flex-col pb-[10px] sm:pb-[0px] md:flex-row justify-center items-center px-6 md:px-20 bg-sky-100 inset-shadow-sm">
           <div className="relative w-full md:w-1/2 flex justify-center items-center overflow-hidden 
             before:content-[''] before:absolute before:left-0 before:top-[5%] before:w-full before:h-[90%] 
             before:bg-[url('/local.png')] before:bg-center before:blur-[1px] before:bg-cover before:rounded-xl">
@@ -65,7 +68,7 @@ export default function page() {
               ¿Quiénes somos?
             </h1>
           </div>
-          <p className="text-base md:text-[20px] w-full md:w-1/2 mt-4 md:mt-0 md:ml-5">
+          <p className="text-base md:text-[20px] w-full md:w-1/2 mt-4 md:mt-0 md:ml-5 ">
             Somos uno de los principales distribuidores mayoristas de insumos eléctricos e iluminación LED en la región del NOA. 
             Nos especializamos en brindar soluciones integrales tanto para instalaciones domiciliarias como para grandes obras y desarrollos industriales. 
             Contamos con un amplio catálogo de productos de alta calidad, seleccionados para responder a las exigencias del sector eléctrico moderno.
@@ -73,7 +76,7 @@ export default function page() {
         </div>
 
         
-        <div className="shadow-sm inset-shadow-sm bg-orange-300">
+        <div className="bg-sky-100">
           <div className="flex flex-col pb-[10px] sm:pb-[0px] sm:pb-[0px] md:flex-row justify-center items-center px-6 md:px-20">
             <div className="relative w-full md:w-1/2 flex justify-center items-center overflow-hidden 
               before:content-[''] before:absolute before:left-0 before:top-[5%] before:w-full before:h-[90%] 
@@ -90,7 +93,7 @@ export default function page() {
         </div>
 
 
-        <div className="bg-white">
+        <div className="bg-sky-100">
           <div className="flex flex-col pb-[10px] sm:pb-[0px] sm:pb-[0px] md:flex-row justify-center items-center px-4 sm:px-6 md:px-20">
             <div className="relative w-full md:w-1/2 flex justify-center items-center overflow-hidden 
               before:content-[''] before:absolute before:left-0 before:top-[5%] before:w-full before:h-[90%] 

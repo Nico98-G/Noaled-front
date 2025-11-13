@@ -43,35 +43,47 @@ const page = () => {
                 </li>
 
                 <li className='justify-items-center text-center p-[15px] h-[300px] max-w-[250px] transition duration-300 ease-in-out scale-100 hover:scale-110'>
-                    <Image 
-                        src="/productos/hogar.jpg" 
-                        alt="imagen"
-                        height={300}
-                        width={250}
-                        className='h-[80%] overflow-hidden rounded-sm'
-                    />
-                    <p className='mt-[10px] font-bold text-[18px]'>
-                        ILUMINACIÓN
-                        HOGAR
-                    </p>
-                </li>
-
-                <li className='justify-items-center text-center p-[15px] h-[300px] max-w-[250px] transition duration-300 ease-in-out scale-100 hover:scale-110'>
-                    <Image 
-                        src="/productos/materiales.png" 
-                        alt="imagen"
-                        height={300}
-                        width={250} 
-                        className='h-[80%] overflow-hidden object-cover rounded-sm'
-                    />
-                    <p className='mt-[10px] font-bold text-[18px]'>
-                        MATERIALES ELÉCTRICOS
-                    </p>
+                    <a 
+                    href="https://s3.coresagroup.com/MACROLED/catalogos/Macroled_General.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                        <Image 
+                            src="/productos/hogar.jpg" 
+                            alt="imagen"
+                            height={300}
+                            width={250}
+                            className='h-[80%] overflow-hidden rounded-sm'
+                        />
+                        <p className='mt-[10px] font-bold text-[18px]'>
+                            ILUMINACIÓN
+                            HOGAR
+                        </p>
+                    </a>
                 </li>
 
                 <li className='justify-items-center text-center p-[15px] h-[300px] max-w-[250px] transition duration-300 ease-in-out scale-100 hover:scale-110'>
                     <a 
-                    href="https://catalogo-jadever.netlify.app/catalogo-jadever-argentina.pdf"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                        <Image 
+                            src="/productos/materiales.png" 
+                            alt="imagen"
+                            height={300}
+                            width={250} 
+                            className='h-[80%] overflow-hidden object-cover rounded-sm'
+                        />
+                        <p className='mt-[10px] font-bold text-[18px]'>
+                            MATERIALES ELÉCTRICOS
+                        </p>
+                    </a>
+                </li>
+
+                <li className='justify-items-center text-center p-[15px] h-[300px] max-w-[250px] transition duration-300 ease-in-out scale-100 hover:scale-110'>
+                    <a 
+                    href="https://s3.coresagroup.com/JADEVER/catalogo/catalogo-jadever-argentina.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     >
