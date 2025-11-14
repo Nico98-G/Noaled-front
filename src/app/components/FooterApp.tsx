@@ -1,6 +1,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { SiTiktok } from "react-icons/si";
 
@@ -8,13 +9,19 @@ const FooterApp = () => {
   return (
     <footer className="bg-gray-400 text-white grid grid-cols-1 md:grid-cols-3 items-center px-6 py-6 gap-6 md:gap-0 text-center md:text-left">
       {/* Logo */}
+
+      
       <div className="flex justify-center md:justify-start">
-        <Image
-          src="/noa-led-removebg-preview.png"
-          alt="logo"
-          width={80}
-          height={80}
-        />
+        <Link
+        href={"/home"}>
+          <Image
+            src="/noa-led-removebg-preview.png"
+            alt="logo"
+            width={80}
+            height={80}
+          />
+        </Link>
+
       </div>
 
       {/* Redes sociales */}

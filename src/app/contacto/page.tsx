@@ -75,8 +75,10 @@ export default function Page() {
         </form>
       </main>
       <aside className="items-center justify-items-center lg:ml-2"> 
-        <h2>Puedes llegar a nuestro local para conocernos personalmente</h2> 
+        <h2 className="text-[20px] text-center">Puedes llegar a nuestro local para conocernos personalmente</h2> 
         <br />
+        <br/>
+        <br/>
         <div className="w-[100%] flex justify-center"> 
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.524995515191!2d-65.21612889009641!3d-26.823249376603396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225dafb6cf70f1%3A0x4ca9107135c4ec29!2sNOALED%20SRL!5e0!3m2!1ses!2sar!4v1753364653243!5m2!1ses!2sar" className="w-[80%] h-[300px] border-0" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" /> 
         </div> 

@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
+import Link from 'next/link';
 import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({
@@ -63,10 +64,9 @@ const page = () => {
                 </li>
 
                 <li className='justify-items-center text-center p-[15px] h-[300px] max-w-[250px] transition duration-300 ease-in-out scale-100 hover:scale-110'>
-                    <a 
-                    href=""
+                    <Link
+                    href="/productos/proximo"
                     target="_blank"
-                    rel="noopener noreferrer"
                     >
                         <Image 
                             src="/productos/materiales.png" 
@@ -78,7 +78,7 @@ const page = () => {
                         <p className='mt-[10px] font-bold text-[18px]'>
                             MATERIALES ELÉCTRICOS
                         </p>
-                    </a>
+                    </Link>
                 </li>
 
                 <li className='justify-items-center text-center p-[15px] h-[300px] max-w-[250px] transition duration-300 ease-in-out scale-100 hover:scale-110'>
