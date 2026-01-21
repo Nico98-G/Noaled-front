@@ -43,6 +43,7 @@ export default function RootLayout({
         <main className="flex-grow flex flex-col w-full">{children}</main>
         
         {mostrarLayout && <FooterApp />}
+        <Analytics />
       </body>
     </html>
   );
