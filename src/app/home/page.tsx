@@ -25,7 +25,7 @@ export default function page() {
             <Image src="/logos/litex.png" alt="imagen" width={100} height={50} />
             <Image src="/logos/jadever.png" alt="imagen" width={100} height={50} />
             <Image src="/logos/strada.jpg" alt="imagen" width={100} height={50} />
-            <Image src="/logos/richi.png" alt="imagen" width={100} height={50} />
+            <Image src="/logos/genrod.png" alt="imagen" width={100} height={50} />
             <Image src="/logos/teclastar.jpg" alt="imagen" width={100} height={50} />
           </div>
         </div>

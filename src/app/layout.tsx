@@ -1,5 +1,5 @@
 "use client";
-
+import { Analytics } from "@vercel/analytics/next"
 import { usePathname } from "next/navigation";
 import { Roboto, Orbitron } from "next/font/google";
 import "./globals.css";
@@ -43,6 +43,7 @@ export default function RootLayout({
         <main className="flex-grow flex flex-col w-full">{children}</main>
         
         {mostrarLayout && <FooterApp />}
+        <Analytics />
       </body>
     </html>
   );
