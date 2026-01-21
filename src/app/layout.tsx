@@ -1,5 +1,5 @@
 "use client";
-
+import { Analytics } from "@vercel/analytics/next"
 import { usePathname } from "next/navigation";
 import { Roboto, Orbitron } from "next/font/google";
 import "./globals.css";
